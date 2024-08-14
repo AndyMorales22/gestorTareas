@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js', //punto de entrada de la apliación 
     output: {
         filename: 'bundle.js', //nombre del archivo de salida
@@ -17,7 +18,7 @@ module.exports = {
                 exclude: /node_modules/, //excluir la carpeta node_modules
                 use: {
                     loader: 'babel-loader', //loader para convertir JS moderno a JS compatible con más navegadores
-                    opinions:{
+                    options:{
                         presets: ['@babel/preset-env'],
                     },
                 },
@@ -26,7 +27,9 @@ module.exports = {
     },
     devtool: 'source-map', //genera source maps para facilitar la depuración
     devServer: {
-        contentBase: path.resolve(__dirname,'dist'), //carpeta del que correrá el servidor
+        static:{
+            directory: path.resolve(__dirname, 'dist'), //carpeta del que correrá el servidor
+        }, 
         compress: true, //habilitar compresión gzip
         port : 9000, //puerto del servidor de desarrollo
     },
