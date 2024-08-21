@@ -1,5 +1,6 @@
 import { renderTasks } from "./ui";
 import { addTask, deleteTask, updateTask } from "./task";
+import confetti from "canvas-confetti";
 
 document.addEventListener("DOMContentLoaded", () => {
     //hacemos visible la lista de tareas

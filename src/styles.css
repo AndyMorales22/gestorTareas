@@ -1,23 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /*Estilos generales*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(flores.jpg);
+    background-position: center;
 }
 
 /* estilos para el contenedor principal*/
 #app {
-    background-color: white;
+    background-color: #faedcd;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    width: 350px;
 }
+
 /* estilos para el formulario */
 form {
     display: flex;
@@ -36,11 +44,16 @@ input {
 /*estilos al botón*/
 button {
     padding: 5px 8px;
-    background-color: #007bff;
-    color: white;
+    background-color: #e9c46a;
+    color: black;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    border-radius: 25%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /*estilos para la lista*/
@@ -51,7 +64,7 @@ ul {
 
 /*estilos para el elemento de la lista*/
 li{
-    background-color: #f4f4f4;
+    background-color: #ccd5ae;
     padding: 10px;
     border: 1px solid #ddd;
     margin-top: 10px;
@@ -64,4 +77,29 @@ li{
 li.completed {
     text-decoration: line-through;
     color: #888;
+}
+.toggle {
+    background-color: #e9edc9;
+    border-radius: 25%
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.delete {
+    background-color: #e9edc9;
+    border-radius: 25%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
 }
